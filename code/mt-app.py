@@ -10,7 +10,7 @@ listSharpOrFlat = ["sharps", "flats"]
 accidentals = random.choice(listNumOfAccidentals)
 sharpOrFlat = random.choice(listSharpOrFlat)
 
-print("What is the name of the key signature with "+str(accidentals)+" "+sharpOrFlat)
+st.subheader("What is the name of the key signature with "+str(accidentals)+" "+sharpOrFlat)
 
 if sharpOrFlat == "sharps":
     ks = key.KeySignature(accidentals);
