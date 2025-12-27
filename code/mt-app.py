@@ -15,18 +15,18 @@ st.subheader("What is the name of the key signature with "+str(accidentals)+" "+
 if sharpOrFlat == "sharps":
     ks = key.KeySignature(accidentals);
     key = ks.asKey()
-    print(key)
+    st.text(key)
 else:
     ks = key.KeySignature(-accidentals);
     key = ks.asKey()
-    print(key)
+    st.text(key)
     
-print("What is the relative minor of "+str(key))
+st.subheader("What is the relative minor of "+str(key))
 
-print(key.relative)
+st.text(key.relative)
 
-print("What is the parallel minor of "+str(key))
+st.subheader("What is the parallel minor of "+str(key))
 
-print(key.parallel)
+st.text(key.parallel)
 
 
