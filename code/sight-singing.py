@@ -87,13 +87,13 @@ if timeSig == "4/4":
             newNote = note.Note(scalePitchNames[int(newNoteSD)-1])
             
             if newNote.name == k.getLeadingTone().name and keyLetter.islower():
-                newNote.pitch.accidental("flat")
+                newNote.pitch.accidental("sharp")
                 
             if cl == clef.TrebleClef():
                 s = converter.parse("tinyNotation: " + newNote.name.lower() + tempNoteString)
                 print(s.recurse().notes.first().pitch.midi)
                 print(s.flatten().notes[1].pitch.midi)
-                if abs(s.recurse().notes.first().pitch.midi - s.flatten().notes[1].pitch.midi) > 5:
+                if abs(s.recurse().notes.first().pitch.midi - s.flatten().notes[1].pitch.midi) > 7:
                     noteName = newNote.name.lower() + "'"
                 else:
                     noteName = newNote.name.lower()
