@@ -24,8 +24,3 @@ print(key.relative)
 print("What is the parallel minor of " + str(key))
 print(key.parallel)
 
-
-
-
-
-
