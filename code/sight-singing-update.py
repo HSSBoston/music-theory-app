@@ -118,7 +118,6 @@ if timeSig == "4/4":
     m2Rhythm = random.choice(measureTwoThreeFF)
     m3Rhythm = random.choice(measureTwoThreeFF)
     m4Rhythm = random.choice(measureFourFF)
-    
 else:
     m1Rhythm = random.choice(measureOneSE)
     m2Rhythm = random.choice(measureTwoThreeSE)
